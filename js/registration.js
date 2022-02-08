@@ -429,11 +429,11 @@ $('#subm_but').on('click', function (event) {
 
     }
 
-    var csrfmiddlewaretoken = document.createElement("input");
-    csrfmiddlewaretoken.type = "text";
-    csrfmiddlewaretoken.value = getCookie('csrftoken');
-    csrfmiddlewaretoken.name = "csrfmiddlewaretoken";
-    form.appendChild(csrfmiddlewaretoken);
+    // var csrfmiddlewaretoken = document.createElement("input");
+    // csrfmiddlewaretoken.type = "text";
+    // csrfmiddlewaretoken.value = getCookie('csrftoken');
+    // csrfmiddlewaretoken.name = "csrfmiddlewaretoken";
+    // form.appendChild(csrfmiddlewaretoken);
 
 
     form.method = "POST";
