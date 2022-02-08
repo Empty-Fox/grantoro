@@ -20,24 +20,24 @@ function toggleMenu() {
 
 
 ////////////////////////cookie///////////////////
-const cookieEl = document.querySelector('.cookie-block');
-const okEl = document.querySelector('.cookie-ok');
+// const cookieEl = document.querySelector('.cookie-block');
+// const okEl = document.querySelector('.cookie-ok');
 
-okEl.addEventListener('click', () => {
-  cookieEl.style.display = 'none';
-});
+// okEl.addEventListener('click', () => {
+//   cookieEl.style.display = 'none';
+// });
 
-let cookies = () => {
-  if (!Cookies.get('hide-cookie')) {
-    setTimeout(() => {
-      cookieEl.style.display = 'block';
-    }, 1000);
-  }
+// let cookies = () => {
+//   if (!Cookies.get('hide-cookie')) {
+//     setTimeout(() => {
+//       cookieEl.style.display = 'block';
+//     }, 1000);
+//   }
 
-  Cookies.set('hide-cookie', 'true', {
-    expires: 30
-  });
-}
+//   Cookies.set('hide-cookie', 'true', {
+//     expires: 30
+//   });
+// }
 
 
-cookies();
+// cookies();
