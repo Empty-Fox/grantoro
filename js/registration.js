@@ -430,7 +430,7 @@ $('#subm_but').on('click', function (event) {
     }
 
     var csrfmiddlewaretoken = document.createElement("input");
-    csrfmiddlewaretoken.type = "text";
+    csrfmiddlewaretoken.type = "hidden";
     csrfmiddlewaretoken.value = getCookie('csrftoken');
     csrfmiddlewaretoken.name = "csrfmiddlewaretoken";
     form.appendChild(csrfmiddlewaretoken);
