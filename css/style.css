@@ -803,10 +803,14 @@ footer p {
 .careers_block1, .careers_block3 {
   background: linear-gradient(270deg, #FF8540 -2.05%, #282828 73.98%);
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
 }
 .careers_block2 {
   background: linear-gradient(270deg, #282828 28.15%, #FF8540 100%);
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
 }
 .career_block1_left, .career_block1_right {
   flex:1;
