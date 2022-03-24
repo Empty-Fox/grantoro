@@ -815,6 +815,7 @@ footer p {
 .career_block1_left, .career_block1_right {
   flex:1;
   padding: 80px;
+  box-sizing: border-box;
 }
 .career_block1_left_tittle {
   display: flex;
@@ -1683,7 +1684,7 @@ footer p {
     padding: 0 20px !important;
   } 
   .career_block1_left, .career_block2_left {
-    padding: 20px;
+    padding: 20px ;
   }
   .monile_group_email {
     width: 40%;
