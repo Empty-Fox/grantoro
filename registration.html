@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
   <meta name="csrf-token" content="{{ csrf_token() }}">
+<head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,6 +82,7 @@
               <div class="tabs-input__wrap">
                 <i class="far fa-envelope"></i>
                 <input type="text" name="email" placeholder="Email*" value="" required />
+                <input type="hidden" name="_token" value="cdOnOkT9lYOq2z1Oy3kXjszHUrjPjXmPJmjAc8AX">
               </div>
               <div class="tabs_column2">
                 <div class="tabs-input__wrap">
@@ -114,8 +115,7 @@
               <div class="tabs_column2 ">
                 <div class="tabs-input__wrap padd">
                   <div class="select">
-                    <select name="im_type" id="imType" required=""
-                      style="position: absolute; opacity: 0; visibility: hidden;">
+                    <select name="im_type" id="imType" required="">
                       <option value="" disabled="" selected="" hidden="">IM Type*</option>
                       <option value="Skype">Skype</option>
                       <option value="Telegram">Telegram</option>
@@ -449,10 +449,18 @@
       </div>
     </div>
   </div>
-  
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
   <script src="js/registration.js"></script>
+  <script>
+    $.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+  </script>
+
 </body>
 
 </html>
