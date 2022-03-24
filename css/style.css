@@ -1283,6 +1283,7 @@ footer p {
     transform: unset;
     grid-template-columns: .1fr 1fr;
     align-items: center;
+    width: 30%;
   }
 
   .career_block2_right.career_block .career_vacancy, .career_block1_right.career_block .career_vacancy {
